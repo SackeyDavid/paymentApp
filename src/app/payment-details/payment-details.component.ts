@@ -22,6 +22,7 @@ export class PaymentDetailsComponent implements OnInit {
 
   populateForm(selectedRecord: PaymentDetail) {
     this.service.formData = Object.assign({}, selectedRecord);
+    console.log(this.service.formData)
   }
 
   onDelete(id: number) {
@@ -31,7 +32,9 @@ export class PaymentDetailsComponent implements OnInit {
         res => {
           this.service.refreshList();
           this.toastr.error("Deleted Successfully", 'Payment Detail Register');
-        });
+        },
+        err => {console.log(err) }
+      );
     }
     
   }
