@@ -1,6 +1,9 @@
 # PaymentApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.2.
+DevConnectionString for SMARTNET
+Data Source=SQL5102.site4now.net,1433;Initial Catalog=db_a7cba1_paymentdetaildb;User Id=db_a7cba1_paymentdetaildb_admin;Password=8#4PIErcube;
+
 
 ## Development server
 
